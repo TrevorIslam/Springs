@@ -1,4 +1,5 @@
 var springs;
+var t = 0;
 
 function setup () {
   createCanvas(500,500,WEBGL);
@@ -18,4 +19,5 @@ function draw () {
       i.draw();
     }
   pop();
+  t+=1;
 };
