@@ -16,7 +16,7 @@ function setup () {
       let d = sqrt(x*x+y*y+z*z);
       let w = num*s;
       let maxd = sqrt((w*w)/2);
-      let scaler = pow(d/maxd,3);
+      let scaler = pow(d/maxd,2.5);
       let phase = PI*scaler;
       springs.push(new Spring(x,y,z,s,phase));
     }
