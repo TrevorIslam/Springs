@@ -5,8 +5,9 @@ var s = 10;
 
 
 function setup () {
-  createCanvas(500,500,WEBGL);
-    normalMaterial();
+  let cv = createCanvas(500,500,WEBGL);
+  cv.parent("myCanvas");
+  normalMaterial();
   springs = [];
   for (let i =0;i<num;i++) {
     for (let j = 0;j<num;j++) {
